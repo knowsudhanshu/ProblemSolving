@@ -6,5 +6,6 @@
         <page name='2Sum'/>
         <page name='LinkedListPalindrom'/>
         <page name='GridProblems - Finding minimum-cost path in a 2-D Matrix'/>
+        <page name='GridProblems - Finding number of ways to reach MxN from 0x0'/>
     </pages>
 </playground>
