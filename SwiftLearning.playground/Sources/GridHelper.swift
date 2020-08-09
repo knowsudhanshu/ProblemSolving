@@ -1,4 +1,6 @@
 
+import Foundation
+
 open class GridDimension {
     public let M: Int
     public let N: Int
@@ -29,13 +31,13 @@ open class GridHelper {
         return grid
     }
     
-    public func getEmptyGrid() -> [[Int]] {
+    public func getEmptyGrid(with element: Int = 0) -> [[Int]] {
         var grid: [[Int]] = []
         
         for _ in 0..<dimension.M  {
             var column: [Int] = []
             for _ in 0..<dimension.N {
-                column.append(0)
+                column.append(element)
             }
             if !column.isEmpty {
                 grid.append(column)
@@ -44,4 +46,13 @@ open class GridHelper {
         
         return grid
     }
+    
+    
+    public static func print(grid: [[Int]]) {
+        for x in grid {
+            Swift.print(x)
+        }
+        Swift.print("=============")
+    }
+
 }

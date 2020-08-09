@@ -36,21 +36,14 @@ func findMinCost(_ grid: [[Int]], dimension: GridDimension = GridHelper.shared.d
     return minCost
 }
 
-func print(grid: [[Int]]) {
-    for x in grid {
-        print(x)
-    }
-    print("=============")
-}
-
 let gridDimension = GridDimension(m: 5, n: 2)
 
 GridHelper.shared.dimension = gridDimension
 
 let CostGrid = GridHelper.shared.getPositiveIntGrid()
 print("\ninput:")
-print(grid: CostGrid)
+GridHelper.print(grid: CostGrid)
 
 let minCost = findMinCost(CostGrid)
 print("\nminCost:")
-print(grid: minCost)
+GridHelper.print(grid: minCost)
